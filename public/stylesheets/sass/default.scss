@@ -11,6 +11,9 @@ body {
     font-size:12pt;
     color: $color;
     margin: 0;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title {
@@ -18,13 +21,8 @@ body {
 }
 
 #page {
-    height: 900px;
-    border-top: 3px solid $dark;
-    border-bottom: 3px solid $dark;
-    margin: 10 auto;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 700px;
+    margin: 0 auto;
 
     h1 {
         font-size: 3em;

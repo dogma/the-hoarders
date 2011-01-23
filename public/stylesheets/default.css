@@ -3,19 +3,17 @@ body {
   font-family: "Courier New", courier, sans;
   font-size: 12pt;
   color: #553f21;
-  margin: 0; }
+  margin: 0;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .title {
   font-size: 3em; }
 
 #page {
-  height: 900px;
-  border-top: 3px solid #332415;
-  border-bottom: 3px solid #332415;
-  margin: 10 auto;
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  height: 700px;
+  margin: 0 auto; }
   #page h1 {
     font-size: 3em;
     color: #332415;
