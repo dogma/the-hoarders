@@ -18,13 +18,13 @@ body {
 }
 
 #page {
-    height: 1032px;
+    height: 900px;
     border-top: 3px solid $dark;
     border-bottom: 3px solid $dark;
-    margin: 30 auto;
+    margin: 10 auto;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
-    backgound-position:center;
+    background-position: center;
 
     h1 {
         font-size: 3em;
