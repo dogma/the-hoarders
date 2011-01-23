@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  font-family: "Courier New", courier, sans;
+  font-size: 12pt;
+  color: #553f21;
+  margin: 0; }
+
+.title {
+  font-size: 3em; }
+
+#page {
+  height: 1032px;
+  border-top: 3px solid #332415;
+  border-bottom: 3px solid #332415;
+  margin: 30 auto;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  backgound-position: center; }
+  #page h1 {
+    font-size: 3em;
+    color: #332415;
+    clear: both; }
+  #page .inner {
+    width: 1000px;
+    margin: 220px auto 0 auto;
+    text-align: right; }
+  #page .menu > * {
+    width: 140px;
+    float: right;
+    clear: both; }
+  #page .menu .digg:before {
+    content: url("../images/digg.png"); }
+  #page .menu .facebook:before {
+    content: url("../images/facebook.png"); }
+  #page .menu .twitter:before {
+    content: url("../images/twitter.png"); }

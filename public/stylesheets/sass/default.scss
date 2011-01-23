@@ -1,0 +1,60 @@
+$base: #bb9f59;
+$color: #553f21;
+$darkRed: #60200e;
+$dark: #332415;
+$black: black;
+$font: "Courier New", courier, sans;
+
+body {
+    background-color: $black;
+    font-family:$font;
+    font-size:12pt;
+    color: $color;
+    margin: 0;
+}
+
+.title {
+    font-size: 3em;
+}
+
+#page {
+    height: 1032px;
+    border-top: 3px solid $dark;
+    border-bottom: 3px solid $dark;
+    margin: 30 auto;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    backgound-position:center;
+
+    h1 {
+        font-size: 3em;
+        color: $dark;
+        clear: both;
+    }
+
+    .inner {
+        width: 1000px;
+        margin: 220px auto 0 auto;
+        text-align: right;
+    }
+
+    .menu {
+        > * {
+            width: 140px;
+            float: right;
+            clear: both;
+        }
+        .digg:before {
+            content:url("../images/digg.png");
+        }
+
+        .facebook:before {
+            content:url("../images/facebook.png");
+        }
+
+        .twitter:before {
+            content:url("../images/twitter.png");
+        }
+    }
+
+}
