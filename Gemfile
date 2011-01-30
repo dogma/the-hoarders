@@ -12,6 +12,7 @@ gem 'oa-openid'
 gem 'oa-oauth'
 gem 'gravtastic'
 gem 'twitter'
+gem 'aws-s3'
 # Use unicorn as the web server
 # gem 'unicorn'
 
