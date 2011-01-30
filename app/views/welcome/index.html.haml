@@ -1,4 +1,10 @@
 .menu
-  .facebook
-  .twitter
-  .digg
+  %h3 News
+  #messages
+    #mentions
+      - @mentions.each do |r|
+        .mention #{r.from_user} said: #{r.text}
+
+    #news
+      - @news.each do |n|
+        .news #{n.text}

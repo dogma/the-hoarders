@@ -11,7 +11,7 @@ gem 'devise', '~> 1.2rc'
 gem 'oa-openid'
 gem 'oa-oauth'
 gem 'gravtastic'
-
+gem 'twitter'
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -14,9 +14,12 @@ body {
 #page {
   height: 700px;
   margin: 0 auto; }
-  #page h1 {
-    font-size: 3em;
+  #page h1, #page h2, #page h3, #page h4, #page h5, #page h6 {
     color: #332415;
+    margin: 10px 0; }
+  #page h1 {
+    margin: 0 0 10px 0;
+    font-size: 3em;
     clear: both; }
   #page .inner {
     width: 1000px;
@@ -32,3 +35,27 @@ body {
     content: url("../images/facebook.png"); }
   #page .menu .twitter:before {
     content: url("../images/twitter.png"); }
+  #page .menu #messages {
+    width: 300px;
+    background-color: #332415;
+    color: #c8c8c8;
+    padding: 10px;
+    max-height: 400px;
+    overflow: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(./PIE.htc);
+    background-color: #1e1e1e;
+    -pie-background: rgba(30, 30, 30, 0.7);
+    background-color: rgba(30, 30, 30, 0.7); }
+    #page .menu #messages #mentions {
+      max-height: 400px; }
+      #page .menu #messages #mentions .mention {
+        padding: 10px 0;
+        border-bottom: 1px solid #c8c8c8; }
+    #page .menu #messages #news .news {
+      padding: 10px 0;
+      border-bottom: 1px solid #c8c8c8; }

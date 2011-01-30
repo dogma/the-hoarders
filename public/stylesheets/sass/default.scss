@@ -2,8 +2,22 @@ $base: #bb9f59;
 $color: #553f21;
 $darkRed: #60200e;
 $dark: #332415;
+$light: rgb(200,200,200);
 $black: black;
 $font: "Courier New", courier, sans;
+
+@mixin bgColor($red,$green,$blue,$alpha: 1) {
+    behavior: url(./PIE.htc);
+    background-color: rgb($red,$green,$blue);
+    -pie-background: rgba($red,$green,$blue,$alpha);
+    background-color: rgba($red,$green,$blue,$alpha);
+}
+
+@mixin rounded($radius: 10px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
 
 body {
     background-color: $black;
@@ -24,9 +38,14 @@ body {
     height: 700px;
     margin: 0 auto;
 
-    h1 {
-        font-size: 3em;
+    h1, h2, h3, h4, h5, h6 {
         color: $dark;
+        margin: 10px 0;
+    }
+
+    h1 {
+        margin: 0 0 10px 0;
+        font-size: 3em;
         clear: both;
     }
 
@@ -52,6 +71,40 @@ body {
 
         .twitter:before {
             content:url("../images/twitter.png");
+        }
+
+        #messages {
+            width: 300px;
+            background-color: $dark;
+            color: $light;
+            padding: 10px;
+            max-height: 400px;
+            overflow: auto;
+            font-size: 0.8em;
+            text-align: justify;
+
+            @include rounded();
+            @include bgColor(30,30,30,0.7);
+
+            #mentions {
+
+                .mention {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $light;
+                }
+
+                max-height: 400px;
+            }
+
+            #news {
+
+                .news {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $light;
+                }
+
+
+            }
         }
     }
 
