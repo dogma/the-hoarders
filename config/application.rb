@@ -39,11 +39,11 @@ module TheHoarders
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-    Twitter.config do |config|
-      config.consumer_key = "gFsc1wJnmRUKnothna2A"
-      config.consumer_secret = "WMQKZH7AIljlVP1rGpLfcY7I08G056OM34wAISbNS0"
-      config.oauth_token = "241042542-rpZp2weGElEpQqOsGQHUUa7iqNm1fhlF7mD0nk6S"
-      config.oauth_token_secret = "8J8Qi1ch293LB5Tg09SaLgxQWj1Pm7LtJgeBQ45I"
-    end
+#    Twitter.config do |config|
+#      config.consumer_key = "gFsc1wJnmRUKnothna2A"
+#      config.consumer_secret = "WMQKZH7AIljlVP1rGpLfcY7I08G056OM34wAISbNS0"
+#      config.oauth_token = "241042542-rpZp2weGElEpQqOsGQHUUa7iqNm1fhlF7mD0nk6S"
+#      config.oauth_token_secret = "8J8Qi1ch293LB5Tg09SaLgxQWj1Pm7LtJgeBQ45I"
+#    end
   end
 end
