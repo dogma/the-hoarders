@@ -1,5 +1,9 @@
 TheHoarders::Application.routes.draw do
 
+  resources :galleries
+  resources :characters
+  resources :contributors
+
   root :to=>"welcome#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,5 @@
+#galleries
+  %h2 Galleries
+  - @galleries.each do |gallery|
+    -if gallery.images.count > 0
+      .gallery=gallery.name

@@ -1,4 +1,4 @@
-.menu
+.rightblock
   %h3 News
   #messages
     #mentions
@@ -8,3 +8,24 @@
     #news
       - @news.each do |n|
         .news #{n.text}
+.thebox
+  %img.peek{:src=>"/images/peekinside.png"}
+  #menu.menu{:style=>"display:none;"}
+    %a= link_to "Gallery", galleries_path
+    %a= link_to "Characters", characters_path
+    %a= link_to "Concept Art", galleries_path
+    %a= link_to "Crew", contributors_path
+    .close [x] close
+  :javascript
+    var menu = dojo.query("#menu")[0];
+    var close = dojo.query(".close")[0];
+
+    dojo.query(".peek").forEach(function (o) {
+      dojo.connect(o,"onmouseover",function (e) {
+        dojo.style(menu,"display","inline-block");
+      });
+    });
+
+    dojo.connect(close,"onclick",function (e) {
+      dojo.style(menu,"display","none");
+    });
