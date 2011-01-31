@@ -45,5 +45,10 @@ module TheHoarders
 #      config.oauth_token = "241042542-rpZp2weGElEpQqOsGQHUUa7iqNm1fhlF7mD0nk6S"
 #      config.oauth_token_secret = "8J8Qi1ch293LB5Tg09SaLgxQWj1Pm7LtJgeBQ45I"
 #    end
+
+    #RSpec testing.
+    config.generators do |g|
+      g.test_framework :rspec
+    end
   end
 end

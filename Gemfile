@@ -35,3 +35,8 @@ gem 'aws-s3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :test, :development do
+  gem 'rspec-rails', '>= 2.4'
+  gem 'autotest'
+end
