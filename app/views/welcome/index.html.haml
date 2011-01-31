@@ -13,8 +13,8 @@
   #menu.menu{:style=>"display:none;"}
     %a= link_to "Gallery", galleries_path
     %a= link_to "Characters", characters_path
-    %a= link_to "Concept Art", galleries_path
-    %a= link_to "Crew", contributors_path
+    %a= link_to "Concept Art", gallery_path(1)
+    %a= link_to "Crew", crew_contributors_path
     .close [x] close
   :javascript
     var menu = dojo.query("#menu")[0];

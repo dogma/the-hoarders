@@ -17,6 +17,14 @@ body {
   #page h1, #page h2, #page h3, #page h4, #page h5, #page h6 {
     color: #332415;
     margin: 10px 0; }
+  #page .home {
+    font-size: 2em;
+    margin: 0 2em;
+    color: #332415;
+    font-weight: bold;
+    text-decoration: none; }
+  #page .home:hover {
+    text-decoration: underline; }
   #page h1 {
     margin: 0 0 10px 0;
     font-size: 3em;
@@ -25,7 +33,8 @@ body {
     width: 1000px;
     margin: 220px auto 0 auto;
     text-align: right; }
-    #page .inner #galleries {
+    #page .inner #galleries, #page .inner #crew, #page .inner .page {
+      color: #c6a17b;
       padding: 10px;
       behavior: url(./PIE.htc);
       -moz-border-radius: 10px;
@@ -39,7 +48,7 @@ body {
       border: 4px solid #c6a17b;
       text-align: left;
       overflow: auto; }
-      #page .inner #galleries h2, #page .inner #galleries a, #page .inner #galleries h3, #page .inner #galleries h4, #page .inner #galleries h5 {
+      #page .inner #galleries h2, #page .inner #galleries a, #page .inner #galleries h3, #page .inner #galleries h4, #page .inner #galleries h5, #page .inner #crew h2, #page .inner #crew a, #page .inner #crew h3, #page .inner #crew h4, #page .inner #crew h5, #page .inner .page h2, #page .inner .page a, #page .inner .page h3, #page .inner .page h4, #page .inner .page h5 {
         color: #c6a17b; }
   #page .peek {
     margin-top: -30px;

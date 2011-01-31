@@ -1,0 +1,7 @@
+#characters.page
+  %h2 Characters
+  - @characters.each do |character|
+    %h3.character #{character.name}
+    =character.bio
+
+= link_to "< Home", root_path, :class=>"home"

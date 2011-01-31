@@ -1,0 +1,6 @@
+#crew.page
+  %h2 Crew
+  - @crew.each do |member|
+    .member #{member.name} - #{member.position}
+
+= link_to "< Home", root_path, :class=>"home"

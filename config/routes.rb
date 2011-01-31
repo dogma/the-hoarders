@@ -2,7 +2,12 @@ TheHoarders::Application.routes.draw do
 
   resources :galleries
   resources :characters
-  resources :contributors
+  resources :contributors do
+    collection do
+      get "crew"
+      get "actors"
+    end
+  end
 
   root :to=>"welcome#index"
   # The priority is based upon order of creation:

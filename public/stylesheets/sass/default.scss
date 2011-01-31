@@ -73,6 +73,18 @@ body {
         margin: 10px 0;
     }
 
+    .home {
+        font-size: 2em;
+        margin: 0 2em;
+        color: $dark;
+        font-weight: bold;
+        text-decoration:none;
+    }
+
+    .home:hover {
+        text-decoration: underline;
+    }
+
     h1 {
         margin: 0 0 10px 0;
         font-size: 3em;
@@ -84,7 +96,8 @@ body {
         margin: 220px auto 0 auto;
         text-align: right;
 
-        #galleries {
+        #galleries, #crew, .page {
+            color: $border;
 
             h2, a, h3, h4, h5 {
                 color: $border;
