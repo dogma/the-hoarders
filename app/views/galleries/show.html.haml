@@ -1,8 +1,13 @@
 #galleries.page
   %h2=@gallery.name
-  -@gallery.images.each do |i|
-    .image
-      %img{:src=>i.url}
-      .abstract=i.abstract
+  #lb
+    -@gallery.images.each do |i|
+      %a.image
+        %img{:src=>i.url}
+        .abstract=i.abstract
 
 = link_to "< Home", root_path, :class=>"home"
+:javascript
+  dojo.require("dojox.image.Lightbox");
+
+  
